@@ -1,9 +1,5 @@
 #!/usr/bin/python3
-
-for num in range(10):
-    for i in range(10):
-        if (i != num and i > num) and (num != 8 or i != 9):
-            print(f"{num:d}{i:d}" + ", ", end ='')
-        elif num == 8 and i ==9:
-            print(f"{num:d}{i:d}")
-
+for i in range(0, 8):
+    for j in range(i + 1, 10):
+        print("{:d}{:d}".format(i, j), end=', ')
+print("{:d}{:d}".format(i + 1, j))
